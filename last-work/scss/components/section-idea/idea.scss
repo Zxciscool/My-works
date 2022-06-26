@@ -1,0 +1,53 @@
+.idea {
+    padding: 60px 0;
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .tagline {
+            border-right: 2px solid rgba(255, 255, 255, 0.3);
+
+            ul {
+                text-align: center;
+                padding-left: 100px;
+
+                li {
+                    a {
+                        display: block;
+                        color: $color-idea-section;
+                        font-size: 38px;
+                        line-height: 46px;
+
+                        &:hover {
+                            @extend %gradient-color-text;
+                        }
+                    }
+                }
+
+                li:nth-child(odd) {
+                    padding-left: 150px;
+                }
+
+                li:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+
+        }
+
+        .dessription {
+            align-self: center;
+            padding-left: 60px;
+
+            h2 {
+                margin-bottom: 30px;
+            }
+
+            p {
+                font-size: 19px;
+                line-height: 30px;
+            }
+        }
+    }
+}

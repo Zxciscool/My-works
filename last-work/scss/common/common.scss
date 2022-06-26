@@ -1,0 +1,58 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: $default-font;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    background-color:#FFFFFF;
+    
+}
+
+.gradient-color{
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: $content-width;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-hd{
+    max-width:$content-width-hd;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 46px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+}
+
+h3 {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color:#FFFFFF
+}

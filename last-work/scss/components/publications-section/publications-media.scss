@@ -1,0 +1,124 @@
+@media (min-width: 992px) and (max-width: 1199px){
+   .publications{
+        .advertasing{
+            .news{
+                
+                img {
+                    max-width: 300px;
+                    max-height: 200px;
+                }
+    }
+}
+    }
+}
+
+    @media (min-width: 768px) and (max-width: 991px){
+       .publications{
+           margin: 0 auto;
+
+     .container{
+        max-width: $content-width-ld;   
+            .advertasing{
+                grid-gap: 15px;
+                .news{
+                    img {
+                        max-width: 230px;
+                        max-height: 200px;
+                    }
+                }
+            }  
+}
+       }
+    }
+
+    @media screen and (max-width:767px){
+
+        .container{
+            max-width: $content-width-tablet;
+
+            .advertasing{
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "news-1 news-2" "news-3 news-3";
+                .news{
+                    img {
+                        max-width: 280px;
+                        max-height: 200px;
+                    }
+                }
+
+                .news-1{
+                    grid-area: news-1;
+                }
+                .news-2{
+                    grid-area: news-2;
+                }
+                .news-3{
+                   padding: 20px 0;
+                    grid-area: news-3;
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    img {
+                        min-width: 100%;
+                        max-height: 200px;
+                    }
+                    p.content{
+                        margin: 0 30px;
+                        max-width: 100%;
+                    }
+                }
+            }  
+    }
+    }
+
+
+    @media (max-width: 706px) {
+        .container{
+            width: 100%;
+           .advertasing{
+
+            grid-template-columns: 1fr;
+            grid-template-areas: "news-1" "news-2" "news-3";
+
+            .news-1{
+               
+                img {
+                    min-width: 100%;
+                    max-height: 200px;
+            }
+            p.content{
+                margin: 0 30px;
+                max-width: 100%;
+            }
+        }
+
+            .news-2{
+            
+                img {
+                    min-width: 100%;
+                    max-height: 200px;
+            }
+            p.content{
+                margin: 0 30px;
+                max-width: 100%;
+            }
+        }
+            .news-3{
+                img {
+                    min-width: 100%;
+                    max-height: 200px;
+                }
+                p.content{
+                    margin: 0 30px;
+                    max-width: 100%;
+                }
+            }
+
+            }
+    }
+    }
+
+    @media (max-width: 379px) {
+        .container{
+            width: $content-width-mobile;
+        }
+    }

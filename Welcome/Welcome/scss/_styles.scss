@@ -1,0 +1,344 @@
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 14px/21px $primaryFont;
+	width: 100%;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+body {
+    background: $white url(../images/tile.png) center center;
+}
+
+*, hr {
+    box-sizing: border-box;
+}
+
+.heading-container {
+    @include make-md-column(12);
+}
+
+.heading-h2 {
+    margin: 30 0 10px 0;
+    color: #1c1c1c;
+}
+
+.welcome {
+    padding-top: 100px;
+}
+
+p {
+    margin: 0 0 28px 0;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 80px;
+	background: $headerBackground;
+    color: $headerColor;
+    position: relative;
+    
+    &::after {
+        content: '\0020';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        bottom: -10px;
+        left: 0;
+        background: url(../images/znak.png) repeat-x center center;
+    }
+}
+
+.logo {
+    float: left;
+    position: relative;
+    z-index: 2;
+    
+    &__link {
+        
+    }
+    
+    &__img {
+    
+    }
+}
+
+.nav {
+    float: right;
+    padding: 25px 0;
+    
+    &__item {
+        float: left;
+        margin: 5px 20px;
+    }
+    
+    &__link {
+        color: $headerColor;
+        padding: 4px 0;
+        font-size: 18px;
+        
+        &--active,
+        &:hover {
+            border-bottom: 3px solid $headerColor;
+        }
+        
+        &:hover {
+            color: $headerColor;
+            text-decoration: none;
+        }
+    }
+}
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+	padding: 0 0 352px;
+}
+
+.box-line {
+    border: none;
+    height: 11px;
+    border-top: 1px solid $lineColor;
+    border-bottom: 1px solid $lineColor;
+    margin: 30px 0;
+
+    &--top {
+        border-top-width: 6px;
+    }
+    
+    &--bottom {
+        border-bottom-width: 6px;
+    }
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	margin: -352px 0 0;
+	height: 352px;
+	background: $footerBackground;
+	position: relative;
+}
+
+.modal-link {
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background: #fff; }
+  .modal-link__image {
+    width: 100%;
+    filter: grayscale(1);
+    margin-bottom: 20px;
+    transition: all 1s linear; }
+    .modal-link__image:hover {
+      filter: grayscale(0); }
+
+.shadow {
+  position: relative;
+  transition: all 1s linear; }
+  .shadow:hover {
+    transform: scale(1.1); }
+
+.shadow:before, .shadow:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  border-radius: 100px / 10px; }
+
+.shadow:before {
+  top: 4px; }
+
+.shadow:after {
+  right: 10px;
+  left: auto;
+  transform: skew(8deg) rotate(3deg); }
+
+
+.picture {
+ width: 100%;
+    filter: grayscale(1);
+    margin-bottom: 20px;
+	margin-top: 5px;
+
+}
+
+
+.typography {
+
+border: 1px solid black;
+border-left: 4px outset black;
+
+} 
+
+.typography1 {
+
+border: 1px solid black;
+border-left: 4px outset green;
+
+} 
+
+.typography2 {
+
+border: 1px solid black;
+border-left: 4px outset #c1b0ac;
+
+} 
+
+.typography3 {
+
+border: 1px solid black;
+border-left: 4px outset #c99f95;
+
+} 
+
+.picture2 {
+
+width : 30%;
+height: 100px;
+margin-bottom: 5px;
+	margin-top: 5px;
+margin-right: 5px;
+}
+
+
+.linkright {
+
+    padding: 0 0;
+    
+    &_item {
+    
+        margin:5px 0;
+
+    }
+    
+    &_link {
+        color: #b70303;
+        font-size: 11px;
+	border: 5px solid transparent;
+	border-left: 5px solid #b70303;
+	width: 0;
+	height: 0; }
+}
+
+
+.tringle  {
+ list-style-type: square;
+opacity:0.5;
+ }
+
+.spisok  {
+
+list-style-type: decimal;
+opacity:0.5;
+}
+
+
+.citata {
+
+opacity:0.5;
+font-family: 'Times New Roman', serif;
+font-style: italic;
+}
+
+span {color:red;}
+
+.tablica {border: 2px;}
+
+
+.contact_form ul {
+width:750px;
+list-style-type:none;
+list-style-position:outside;
+margin:0px;
+padding:0px;
+}
+
+.contact_form li{
+padding:12px;
+border-bottom:1px solid #eee;
+position:relative;
+}
+
+.contact_form label {
+ width:100px;
+ margin-top: 3px;
+ display:inline-block;
+ float:left;
+ padding:3px;
+}
+.contact_form input {
+ height:20px;
+ width:400px;
+ padding:5px 8px;
+}
+.contact_form textarea {padding:10px; width:400px;}
+.contact_form button {margin-left:130px;}
+
+.contact_form input, .contact_form textarea {
+ border:1px solid #aaa;
+ box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+ border-radius:2px;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+ background: #fff;
+ border:1px solid #555;
+ box-shadow: 0 0 3px #aaa;
+}
+/* Button Style */
+button.submit {
+ background-color: #68b12f;
+ background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+ background: -webkit-linear-gradient(top, #68b12f, #50911e);
+ background: -moz-linear-gradient(top, #68b12f, #50911e);
+ background: -ms-linear-gradient(top, #68b12f, #50911e);
+ background: -o-linear-gradient(top, #68b12f, #50911e);
+ background: linear-gradient(top, #68b12f, #50911e);
+ border: 1px solid #509111;
+ border-bottom: 1px solid #5b992b;
+ border-radius: 3px;
+ -webkit-border-radius: 3px;
+ -moz-border-radius: 3px;
+ -ms-border-radius: 3px;
+ -o-border-radius: 3px;
+ box-shadow: inset 0 1px 0 0 #9fd574;
+ -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+ -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+ -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+ -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+ color: white;
+ font-weight: bold;
+ padding: 6px 20px;
+ text-align: center;
+ text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+ opacity:.85;
+ cursor: pointer;
+}
+button.submit:active {
+ border: 1px solid #20911e;
+ box-shadow: 0 0 10px 5px #356b0b inset;
+ -webkit-box-shadow:0 0 10px 5px #356b0b inset ;
+ -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+ -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+ -o-box-shadow: 0 0 10px 5px #356b0b inset;
+}

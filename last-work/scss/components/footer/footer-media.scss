@@ -1,0 +1,90 @@
+/* Landscape tablets and medium desktops */
+
+
+
+@media (min-width: 768px) and (max-width: 991px){
+    footer{
+        .container{
+            max-width: $content-width-ld;     
+    }
+}
+}
+
+@media screen and (max-width:767px){
+
+    footer{
+        .container{
+            max-width: $content-width-tablet;
+    }
+    }
+
+    @media (max-width: 706px) {
+
+        footer{
+            .container{
+                width: 100%;
+            .footer-wrap{
+                grid-template-columns: 1fr;
+        grid-template-rows: 20px;
+        grid-template-areas: "map""footer-contact" "rights" ;
+                justify-items: center;
+    
+                .rights{
+                    justify-self: center;
+                }
+    
+                .footer-contact{
+                    text-align: center;
+                }
+            }
+        }
+        }
+    }
+
+    /* Iphone 5 */
+@media (max-width: 379px) {
+
+  footer{
+    .container{
+        width: $content-width-mobile;
+            .footer-wrap{
+                .map{
+                    text-align: center;
+                    .adress{
+                        display: block;
+                        margin-bottom: 10px;
+                        &::after{
+                            display: none;
+                        }
+                    }
+                    a{
+                        display: block;
+                    }
+                }
+                .footer-contact{
+                    text-align: center;
+                    img{ 
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    a.email{
+                        display: block;
+                    }
+                    a.telephone{
+                        display: block;
+                        &::after {
+                        display: none;
+                        margin: 10px;
+                        }
+        
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+    
+        }
+}
+}
+}

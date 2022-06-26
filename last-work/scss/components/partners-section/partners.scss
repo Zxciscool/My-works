@@ -1,0 +1,86 @@
+.partners {
+    .container{
+        max-width: 1440px;
+    }
+    text-align: center;
+    padding-top: 60px;
+    background-color:#FFFFFF;
+    h3{
+        color:#323264;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    .partners-logo{
+        display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+        .logo-bucket {
+            height: 120px;
+            width: 360px;
+            padding-top:30px;
+        }
+
+            .logo-bucket-1{
+                background-color:$color-hillel;
+              
+            }
+
+            .logo-bucket-2{
+                background-color:$color-wannabiz;
+             
+            }
+
+            .logo-bucket-3{
+                background-color:$color-targerine;
+               
+            }
+
+            .logo-bucket-4{
+                background-color: $color-3dlook;
+           
+            }
+
+            .logo-bucket-5{
+                background-color:$color-orangier;
+               
+            }
+
+            .logo-bucket-6{
+                background-color:$color-adteligent;
+             
+            }
+
+            .logo-bucket-7{
+                background-color:$color-clickky;
+               
+            }
+
+            .logo-bucket-8{
+                background-color:$color-eko;
+                
+            }
+
+            .logo-bucket-9{
+                background-color:$color-infatek;
+                
+            }
+
+            .logo-bucket-10{
+                background-color:$color-citipark;
+                
+            }
+
+            .logo-bucket-11{
+                background-color:$color-artpark;
+               
+            }
+
+            .logo-bucket-12{
+                background-color:$color-unlimite;
+                
+            }
+        }
+    }
+    

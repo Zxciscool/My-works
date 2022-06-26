@@ -1,0 +1,125 @@
+@media (min-width: 992px) and (max-width: 1199px){
+    header{
+        .container {
+            max-width: $content-width-lld;
+            }
+}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    header{
+        .container {
+            max-width: $content-width-ld;
+            .header-navigations{
+                grid-gap: 30px;
+            }
+            }
+}
+}
+
+@media screen and (max-width:767px) {
+    header{
+        .container {
+            max-width: $content-width-tablet;
+
+                .header-navigations{
+                    grid-template-columns: 1fr;
+                    grid-template-rows: 30px;
+                    grid-template-areas: "language" "logo" "navigation";
+                    justify-items: self-start;
+                    .logo{
+                        grid-area: logo;
+                        margin: 15px 0;
+                    }
+                    .language-switch{
+                        grid-area: language;
+                        .language{
+                            text-align: left;
+                        }
+                    }
+                    .menu{
+                        grid-area: navigation;
+                    }
+                }
+            }
+}
+
+}
+
+
+@media (max-width: 535px) {
+    header{
+        .container {
+            max-width: $content-width-tablet;
+            .header-navigations{
+                .language-switch{
+                    grid-template-columns: 120px 120px 20px;
+                    .adress{
+                        display: none;
+                    }
+                }
+            }
+        
+            }
+}
+}
+
+
+@media (max-width: 436px) {
+
+    header{
+        background: none;
+        .container {
+            max-width: $content-width-mobile;
+            .header-navigations {
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: "language language" "logo navigation";
+                .language-switch{
+                    grid-template-columns: 1fr 1fr;
+                    background-color: rgba(245, 245, 250, 0.2);
+
+                    .telephone {
+                        
+                        margin-left: 40px;
+                        &::after {
+                          display:none;
+                        }
+                    }
+                    .facebook-logo{
+                        display: none;
+                    }
+            }
+
+            .menu{
+                display: none;
+                img{
+                    display: block;
+                }
+            }
+        }
+
+        [for=burger]{
+            display: block;
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            top: 105px;
+            left: 276px;
+        }
+        [for=burger]::before{
+            content: '☰';
+            color:white;
+        }
+
+        #burger:checked + label + nav{
+            display: block;
+            animation: show .5s ease;
+        }
+
+        #burger:checked +[for=burger]::before{
+            content: '⮾';
+        }
+}
+}
+}

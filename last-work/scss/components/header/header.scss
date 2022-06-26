@@ -1,0 +1,150 @@
+header {
+    background: url('../img/Symbol.svg');
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    max-width: 1440px;
+    background-position: center;
+    padding: 50px 0;
+
+
+    .header-navigations {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+
+        .logo {
+            width: 130px;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+
+        .language-switch {
+            display: grid;
+            grid-template-columns: 120px 230px 120px 20px;
+            justify-content: end;
+            align-items: center;
+
+            .language {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                text-align: center;
+
+                a {
+                    display: block;
+                    font-size: 12px;
+                    line-height: 15px;
+                    font-weight: bold;
+                    padding: 3px;
+                    text-transform: uppercase;
+                    border: 1px solid transparent;
+
+                    &:hover {
+                        border: 1px solid #ffffff28;
+                        border-radius: 20%;
+                        background-color: #ffffff28;
+                        transition: background .3s;
+                    }
+
+                    &:focus {
+                        border: 1px solid $color-accent;
+                        border-radius: 20%;
+                        background-color: $color-accent;
+                    }
+                }
+            }
+
+            .adress {
+                &::after {
+                    content: "●";
+                    color: #E6E6F0;
+                }
+
+                &::before {
+                    content: "●";
+                    color: #E6E6F0;
+                }
+            }
+
+            .telephone {
+                font-weight: bold;
+                &::after {
+                    content: "●";
+                    color: #E6E6F0;
+                }
+            }
+
+            .facebook-logo {
+                 a{
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    background-color: white;
+                 
+                    
+                     img {
+                         width: 20px;
+                         height: 15px;
+
+                     }
+                     &:hover {
+                        background-color:$color-accent;
+                        border-radius:50%;
+                        border:1px solid $color-accent;
+                        width: 100%;
+                        height: 100%;
+                     }
+                 }
+            }
+
+        }
+
+        .menu {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            display: grid;
+            grid-template-columns: 85px 80px 55px 115px 65px;
+            justify-content: end;
+
+
+            a {
+                font-weight: bold;
+            &:hover {
+                text-decoration: underline;
+            }
+            &:focus{
+                color:$color-accent;
+                text-decoration: underline;
+            }
+            }
+        }
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 265px;
+    }
+
+    .button-scroll {
+        text-align: center;
+        margin-top: 300px;
+
+        .scroll-down {
+            display: block;
+            transform: rotate(-90deg);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 2px solid #ffffff7f;
+            margin: 0 auto;
+            cursor: pointer;
+
+            &:hover {
+                border: 2px solid $color-accent;
+                color: $color-accent;
+            }
+        }
+    }
+    #burger, [for=burger]{
+        display: none;
+    }
+}

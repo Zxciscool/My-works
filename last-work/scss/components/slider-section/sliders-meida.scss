@@ -1,0 +1,87 @@
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        max-width: $content-width-lld;
+        .slider {
+            width: 1080px;
+            }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: $content-width-ld;
+        .slider {
+            width: 870px;
+            height: 530px;
+
+                .slides{
+                    .controls {
+                        top: 555px;
+                        left: 415px;
+                    }
+                    .slide{
+                        .photo{
+                            img{
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+}
+
+@media screen and (max-width:767px){
+    .container {
+        max-width: $content-width-tablet;
+        .slider {
+            height: 1000px;
+            max-width: 600px;
+
+                .slides{
+                    .controls {
+                        top: 1025px;
+                        left: 235px;
+                    }
+                    .slide{                        
+                        .photo{                           
+                            img{
+                                    height: 400px;
+                            }
+                        }
+                        .content{
+                            padding-top: 0px;
+                            height: 500px;
+
+                            blockquote {
+                                margin-top: 15px;
+                            }
+                            p.full-name {
+                               margin: 15px 0;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    #btn-1:checked~.slides .slide:nth-child(1) {
+        grid-template-columns: 1fr;
+       }
+}
+
+@media (max-width: 379px){
+    .container {
+        width: $content-width-mobile;
+
+        .slider {
+            max-width: 310px;
+            height: 1130px;
+            .slides{
+                .controls {
+                   left: 110px;
+                   top:1150px
+                }
+            }
+        }
+    }
+}

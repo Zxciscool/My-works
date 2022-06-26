@@ -1,0 +1,71 @@
+.publications {
+    background-color: $color-background;
+    padding-top: 30px;
+    max-width: $content-width-hd;
+    margin: 0 auto;
+
+    .nav-anchor {
+        @extend %nav-list;
+    }
+
+    h2 {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        @extend %gradient-color-title-2;
+
+    }
+
+    .advertasing {
+        background-color:$color-background;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+        .news {
+            background-color:#ffffff;
+            img {
+                max-width: 420px;
+                max-height: 200px;
+
+            }
+
+            a {
+                display: block;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: bold;
+                color: $color-active;
+                padding-left: 30px;
+                margin-top: 30px;
+                max-width: 360px;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-hover;
+                }
+
+                &:active {
+                    color: $color-regular;
+                }
+            }
+
+            p.date {
+                color: #B3B3BA;
+                font-size: 12px;
+                line-height: 15px;
+                margin: 15px 0;
+                padding-left: 30px;
+            }
+
+            p.content {
+                color: #000000;
+                font-size: 14px;
+                line-height: 22px;
+                border-top: 2px solid #E6E6F0;
+                max-width: 360px;
+                padding-top: 15px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
